@@ -6,7 +6,7 @@
 ```bash
 clone this repo 
 cd formik
-yarn start
+yarn develop
 ```
 ***
 
