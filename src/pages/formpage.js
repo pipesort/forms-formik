@@ -6,11 +6,11 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-import FormOne from './normalForm'
-import FormTwo from './formik'
-import FormThree from './material-ui-form'
-import FormFour from './errorValidation'
-import FormFive from './dynamiField'
+import NormalForm from './normalForm'
+import FormikForm from './formikForm'
+import MaterialUiForm from './material-ui-form'
+import ErrorValidationForm from './errorValidationForm'
+import DynamicInputForm from './dynamicInputForm'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,19 +81,19 @@ export default function () {
           <Tab label="Dynamik input field" {...a11yProps(4)} />
         </Tabs>
         <TabPanel value={value} index={0}>
-          <FormOne />
+          <NormalForm />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <FormTwo />
+          <FormikForm />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <FormThree />
+          <MaterialUiForm />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <FormFour />
+          <ErrorValidationForm />
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <FormFive />
+          <DynamicInputForm />
         </TabPanel>
       </div>
     </>
